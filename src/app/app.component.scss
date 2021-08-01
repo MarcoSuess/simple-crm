@@ -12,7 +12,7 @@ mat-drawer-container {
 }
 
 .logo-container {
-    border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
     padding: 0px 16px 0 16px;
     min-height: 56px;
     display: flex;
@@ -37,7 +37,7 @@ mat-toolbar-row, mat-toolbar {
         cursor: pointer;
 
         &:hover {
-            background-color: rgba(0,0,0,0.1);
+            background-color: rgba(0,0,0,0.04);
         }
     }
 
@@ -45,5 +45,9 @@ mat-toolbar-row, mat-toolbar {
         margin-right: 16px;
     }
 
+}
 
+
+.router-container {
+    padding: 16px 0 0 56px;
 }
