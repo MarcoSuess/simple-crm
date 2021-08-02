@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "simple-crm-495e5": {
+      "hosting": {
+        "simple-crm": [
+          "simple-crm-495e5"
+        ]
+      }
+    }
+  }
+}
