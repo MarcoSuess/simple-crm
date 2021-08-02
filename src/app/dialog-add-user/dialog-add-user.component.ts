@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { MatDialogRef } from '@angular/material/dialog';
 import { User } from 'src/models/user.class';
 
 @Component({
@@ -12,7 +13,7 @@ export class DialogAddUserComponent implements OnInit {
   user = new User();
   birthDate: Date;
   loading = false;
-  constructor(private firestore: AngularFirestore) { 
+  constructor( public dialogRef: MatDialogRef<DialogAddUserComponent>, private firestore: AngularFirestore) { 
 
   
   }
@@ -32,6 +33,7 @@ export class DialogAddUserComponent implements OnInit {
     .then((result: any) => {
       console.log('adding firebase', result)
       this.loading = false;
+      this.dialogRef.close();
     });
     
      
