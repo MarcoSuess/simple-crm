@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -31,6 +32,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { DialogEditAdressComponent } from './dialog-edit-adress/dialog-edit-adress.component';
+import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     UserComponent,
     DialogAddUserComponent,
     UserDetailComponent,
+    DialogEditAdressComponent,
+    DialogEditUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
     MatProgressBarModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
